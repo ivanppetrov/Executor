@@ -29,7 +29,7 @@ public class TaskExecutorService {
 		orderedTasks.forEach(task -> {
 			try {
 				// TODO change path
-				ProcessBuilder processBuilder = new ProcessBuilder("C:\\Program Files\\Git\\bin\\bash.exe", "-c",
+				ProcessBuilder processBuilder = new ProcessBuilder("bash", "-c",
 						task.getCommand());
 				processBuilder.redirectErrorStream(true);
 
